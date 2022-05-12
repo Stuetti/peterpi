@@ -89,7 +89,7 @@ sub deleteSms {
 sub getSMS() {
 	#https://github.com/kenshaw/hilink/blob/master/client.go
 	my $number = "";
-	my $allowedNumbers = AttrVal("LastSMS", "allowedNumbers", "+491735163299");
+	my $allowedNumbers = AttrVal("LastSMS", "allowedNumbers", "+491234567890");
 	my @phoneNumbers = split(/\s+/, $allowedNumbers);
 	#Log3 "getSMS", 3, "AttrNumbers: ".$allowedNumbers;
 	#foreach $number (@phoneNumbers) {
